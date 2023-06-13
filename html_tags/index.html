@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>HTML теги</title>
+</head>
+<body>
+    <div class="page">
+        <!-- HTML теги. DIV, HEADER, FOOTER, NAV -->
+        <div class="gui__block">
+            <h2>HTML теги. DIV, HEADER, FOOTER, NAV</h2>
+            <div>HTML теги - это кирпичики, из которых строится надежный и крепкий каркас сайта.</div>
+            <div>Строительные теги предназначены для создания структуры/каркаса.</div>
+            <div>Строительные теги - блочные, каждый блок выводится с новой строки.</div>
+            <div>Структура: &lt;имя тега&gt; содержание тега &lt;/имя тега&gt;</div>
+            <div> &lt;header&gt; верхняя часть сайта (шапка) &lt;/header&gt;</div>
+            <div> &lt;nav&gt; навигация или меню &lt;/nav&gt;</div>
+            <div> &lt;footer&gt; нижняя часть сайта (подвал) &lt;/footer&gt;</div>
+        </div>
+        <!-- /HTML теги. DIV, HEADER, FOOTER, NAV -->
+
+        <!-- HTML теги для КОНТЕНТА. -->
+        <div class="gui__block">
+            <h2>HTML теги для КОНТЕНТА.</h2>
+
+            <!-- Заголовки -->
+            <div class="gui__block">
+                <h3>
+                    Заголовки h1 - h6. Блочный элемент.
+                </h3>
+                <h1>Содержимое тега h1 - используется 1 раз на странице</h1>
+                <h2>Содержимое тега h2 - используется много раз</h2>
+                <h3>Содержимое тега h3</h3>
+                <h4>Содержимое тега h4</h4>
+                <h5>Содержимое тега h5</h5>
+                <h6>Содержимое тега h6</h6>
+            </div>
+
+            <!-- Текстовый абзац р -->
+            <div class="gui__block">
+                <h3>Текстовый абзац &lt;p&gt;&lt;/p&gt;</h3>
+                <div>
+                    Блочный тег &lt;p&gt;&lt;/p&gt;. Блочный тег занимает всю строку экрана, независимо от того скок занимает само содержимое
+                </div>
+                <p>Абзац №1. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro quidem necessitatibus commodi. Provident iste dicta cupiditate voluptatibus, vero repellendus asperiores necessitatibus recusandae eum illum corrupti maiores, numquam, eligendi quisquam temporibus!</p>
+                <p>Абзац №2. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro quidem necessitatibus commodi. Provident iste dicta cupiditate voluptatibus, vero repellendus asperiores necessitatibus recusandae eum illum corrupti maiores, numquam, eligendi quisquam temporibus!</p>
+            </div>
+
+            <!-- Выделение куска текста span -->
+            <div class="gui__block">
+                <h3>Выделение куска текста - &lt;span&gt;&lt;/span&gt;</h3>
+                <div>
+                    Строчный тег &lt;span&gt;&lt;/span&gt; - пишется в строку один за другим. Строчный тег - его ширина зависит от количества содержимого внутри него.
+                </div>
+                <br>
+                <span>содержание тега span №1</span>
+                <span>содержание тега span №2</span>
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, qui repellendus tempore, officiis quaerat laudantium eligendi libero perferendis dicta hic delectus? Vero culpa deserunt impedit velit ipsa vel facilis aut.</span>
+                <br>
+                <br>
+                <div>
+                    В строчный тег НЕЛЬЗЯ записать блочный тег. Но внутрь блочных тегов МОЖЕМ помещать строчные.
+                </div>
+            </div>
+
+            <!-- Ссылка а -->
+            <div class="gui__block">
+                <h3>Ссылка &lt;a&gt;&lt;/a&gt;</h3>
+                <div>
+                    Тег а, ссылка на тот или иной документ, сайт или файл. Строчный.
+                </div>
+                <div>
+                    Атрибуты: href - ссылка на другую страницу или сайт; target="_blank" - содержимое откроется в другом окне
+                </div>
+
+                <a target="_blank" href="https://www.google.ru/">Goggle</a>
+            </div>
+
+            <!-- Изображение img -->
+            <div class="gui__block">
+                <h3>Изображение &lt;img&gt;</h3>
+                <div>
+                    Вставка изображений. Строчный. 
+                </div>
+                <div>
+                    Атрибуты: src - путь к картинке. alt - альтернативный текст, если картинка не загрузится
+                </div>
+
+                <img src="img/sea.jpg" alt="Ой, картинки нет!">
+            </div>
+
+            <!-- Маркированный список -->
+            <div class="gui__block">
+                <h3>Маркированный список &lt;ul&gt;&lt;/ul&gt; + &lt;li&gt;&lt;/li&gt;</h3>
+                <ul>
+                    <li>Сначала объявляется ul</li>
+                    <li>Внутри каждый пункт списка обрамляется в li</li>
+                    <li>содержание тега 3</li>
+                 </ul>
+            </div>
+
+             <!-- Нумерованнный список -->
+             <div class="gui__block">
+                <h3>Нумерованнный список &lt;ol&gt;&lt;/ol&gt; + &lt;li&gt;&lt;/li&gt;</h3>
+                <ol>
+                    <li>Сначала объявляется ol</li>
+                    <li>Внутри каждый пункт списка обрамляется в li</li>
+                    <li>содержание тега 3</li>
+                 </ol>
+            </div>
+
+            <!-- Перенос строки -->
+            <div class="gui__block">
+                <h3>Перенос строки &lt;br&gt;</h3>
+                <span>Lorem ipsum dolor sit amet.</span>
+                <span>Lorem ipsum dolor sit amet.</span>
+                <br>
+                <span>Lorem ipsum dolor sit amet.</span>
+            </div>
+        </div>
+        <!-- /HTML теги для КОНТЕНТА. -->
+    </div>
+</body>
+</html>
+
+<style>
+    .gui__block{
+        margin-bottom: 40px;
+    }
+</style>

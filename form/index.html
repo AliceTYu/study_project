@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>HTML теги форм</title>
+</head>
+<body>
+    <!-- &lt;p&gt;&lt;/p&gt; -->
+    <div class="page">
+        <!-- Оболочка формы -->
+        <div class="gui__block">
+            <h3>Оболочка формы &lt;form&gt;&lt;/form&gt;</h3>
+            <div>
+                Это формы поиска, регистрации и авторизацции. Позволяют взаимодействовать с пользователем. Все данные передаются на сервер. 
+            </div>
+            <div>
+                Атрибуты:
+                <ul>
+                    <li>action - куда полетят данные (сервер);</li>
+                    <li>method - метод передачи данных (get - видны в адресной строке(подходит для малоко количества данных), post - передает данные скрытно); </li>
+                    <li>enctype="multipart/form-data"</li>
+                </ul>
+                
+            </div>
+            &lt;form action="#" method="" enctype="multipart/form-data">&lt;/form&gt;
+        </div>
+
+        <!-- Поле ввода -->
+        <div class="gui__block">
+            <h3>Поле ввода &lt;input&gt;</h3>
+            <div>
+                input type="text" - метод приема данных от пользователя. name - имя, value - значение
+            </div>
+            <div>
+                <ul>
+                    <li>placeholder - серый цвет подсказка</li>
+                    <li>disabled - блокирует поле, не отправляет на сервер</li>
+                    <li>tabindex - порядок перехода по ячейкам TAB</li>
+                </ul>
+            </div>
+            <div>
+                <span>Поле ввода</span>
+                <input type="text" tabindex="1" placeholder="Подпись" name="username" value="">
+            </div>
+            <div>
+                <span>Поле ввода пароля</span>
+                <input type="password" name="userpass" value="" placeholder="Поле ввода пароля" >
+            </div>
+        </div>
+
+        <!-- Поле ввода radio button -->
+        <div class="gui__block">
+            <h3>Поле ввода radio button</h3>
+            <div>
+                Поле радио кнопки. Поле name отделяет радио кнопки друг от друга. независимые поля. checked - сразу выбор какого-то поля
+            </div>
+            <div>
+                <p><input tabindex="2" checked type="radio" name="val1" value="value">Выбор 1</p>
+                <p><input tabindex="2" type="radio" name="val1" value="value2">Выбор 2</p>
+             </div>
+             <br>
+             <div>
+                <p><input type="radio" name="val2" value="value">Выбор 1</p>
+                <p><input checked type="radio" name="val2" value="value2">Выбор 2</p>
+             </div>
+        </div>
+
+        <!-- Поле ввода checkbox -->
+        <div class="gui__block">
+            <h3>Поле ввода checkbox</h3>
+            <div>
+                <!-- разные значения name  -->
+                <p><input type="checkbox" name="car" value="yes">наличие авто 1</p>
+                <p><input checked type="checkbox" name="car2" value="yes">наличие авто 2</p>
+                <p><input type="checkbox" name="car3" value="yes">наличие авто 3</p>
+                <p><input checked type="checkbox" name="car4" value="yes">наличие авто 4</p>
+             </div>
+        </div>
+
+        <!-- Файл загрузка -->
+        <div class="gui__block">
+            <h3>Файл загрузка</h3>
+            <div>
+                <p><input type="file" name="foto"></p>
+             </div>
+        </div>
+
+        <!-- Многострочное поле ввода -->
+        <div class="gui__block">
+            <h3>Многострочное поле ввода</h3>
+            <div>
+                <textarea name="text"></textarea>
+             </div>
+        </div>
+
+        <!-- Выпадающий список -->
+        <div class="gui__block">
+            <h3>Выпадающий список &lt;select&gt;&lt;/select&gt; + &lt;option&gt;&lt;/option&gt;</h3>
+            <div>
+                <ul>
+                    <li>select - коорбочка</li>
+                    <li>option - пункт выпадающего списка</li>
+                </ul>
+            </div>
+            <div>
+                <select name="color">
+                    <option value="red">красный</option>
+                    <option selected value="blue">синий</option>
+                    <option value="pink">розовый</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                Выпадающий список select имеет атрибут multiple (выбор несокльких вариантов с нажатым ctrl)
+            </div>
+            <div> 
+                <select multiple name="color">
+                    <option value="red">красный</option>
+                    <option selected value="blue">синий</option>
+                    <option value="pink">розовый</option>
+                 </select>
+             </div>
+        </div>
+
+        <!-- Кнопки -->
+        <div class="gui__block">
+            <h3>Кнопки &lt;button&gt;&lt;/button&gt;</h3>
+            <div>
+                <ul>
+                    <li>submit - отправиться вся форма</li>
+                    <li>reset - очистится вся форма</li>
+                </ul>
+            </div>
+            <div>
+                <button type="submit">Отправить - submit</button>
+                <button type="reset">Очистить форму - reset</button>
+            </div>
+        </div>
+
+        <!-- Практика форма -->
+        <div class="gui__block">
+            <h3>Практика форма</h3>
+            <form action="#" method="post" enctype="multipart/form-data">
+                <div>
+                   <p>Имя</p>
+                   <input tabindex="1" placeholder="Введите имя" type="text" name="username" value="">
+                </div>
+                <div>
+                   <p>Пароль</p>
+                   <input tabindex="2" placeholder="Введите пароль" type="password" name="userpas" value="">
+                </div>
+                <div>
+                   <p>Телефон</p>
+                   <input tabindex="3" placeholder="Введите номер" type="tel" name="userphone" value="">
+                </div>
+                <div>
+                   <p>Пол</p>
+                   <div><input tabindex="4" checked type="radio" name="gender" value="male">Мужской</div>
+                   <div><input tabindex="4" type="radio" name="gender" value="female">Женский</div>
+                </div>
+                <div>
+                   <p>Домашние животные</p>
+                   <div><input tabindex="5" checked type="checkbox" name="dog" value="yes">Собака</div>
+                   <div><input tabindex="6" type="checkbox" name="cat" value="yes">Кошка/кот</div>
+                   <div><input disabled tabindex="7" type="checkbox" name="parrot" value="yes">Попугай</div>
+                </div>
+                <div>
+                   <p>Дополнительная информация</p>
+                   <textarea tabindex="8" placeholder="Введите то, что считаете нужным" name="text"></textarea>
+                </div>
+                <div>
+                   <p>Прикрепить фото</p>
+                   <input tabindex="9" type="file" name="foto">
+                </div>
+                <div>
+                   <p>Любимый цвет</p>
+                   <select tabindex="10" name="color">
+                      <option value="red">Красный</option>
+                      <option value="blue">Синий</option>
+                      <option selected value="pink">Розовый</option>
+                   </select>
+                </div>
+                <div>
+                   <p>Действия</p>
+                   <button type="submit">Отправить</button>
+                   <button type="reset">Очистить</button>
+                </div>
+             </form>
+        </div>
+
+    </div>
+</body>
+</html>
+
+<style>
+    .gui__block{
+        margin-bottom: 40px;
+    }
+</style>
